@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Acrylic Viewer Core</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: transparent; }
+    #canvas-container { width: 100%; height: 100%; background: transparent; }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+    // 預設參數
+    const params = {
+      margin: 12,
+      smooth: 3,
+      alphaCutoff: 20,
+      frontThickness: 0.15,
+      backThickness: 0.30,
+      bevel: 0.02,
+      transmission: 1.0,
+      roughness: 0.0,
+      autoRotate: true,
+      rotateSpeed: 1.0,
+      rotateDirection: -1
+    };
+
+    let scene, camera, renderer, controls, acrylicGroup;
+
+    function init() {
+      const container = document.getElementById('canvas-container');
+
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+      camera.position.set(0, 0, 7);
+
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+      container.appendChild(renderer.domElement);
+
+      const pmremGenerator = new THREE.PMREMGenerator(renderer);
+      scene.environment = pmremGenerator.fromScene(new RoomEnvironment(renderer), 0.04).texture;
+
+      controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+
+      scene.add(new THREE.AmbientLight(0xffffff, 1.2));
+      const d1 = new THREE.DirectionalLight(0xffffff, 2.0); d1.position.set(5, 8, 5); scene.add(d1);
+      const d2 = new THREE.DirectionalLight(0xffffff, 1.5); d2.position.set(-5, -5, -5); scene.add(d2);
+
+      window.addEventListener('resize', onResize);
+
+      // 1. 從 URL Hash / Query 讀取 Base64
+      loadFromURL();
+
+      // 2. 監聽 window postMessage (支援跨網域動態傳入超長 Base64)
+      window.addEventListener('message', (event) => {
+        if (event.data && event.data.type === 'RENDER_ACRYLIC') {
+          if (event.data.params) Object.assign(params, event.data.params);
+          if (event.data.frontBase64) renderBase64(event.data.frontBase64);
+        }
+      });
+
+      animate();
+    }
+
+    function onResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+
+    // 解析 URL 中的 Base64 與參數
+    function loadFromURL() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('margin')) params.margin = parseFloat(urlParams.get('margin'));
+      if (urlParams.has('autoRotate')) params.autoRotate = urlParams.get('autoRotate') === 'true';
+      if (urlParams.has('speed')) params.rotateSpeed = parseFloat(urlParams.get('speed'));
+
+      controls.autoRotate = params.autoRotate;
+      controls.autoRotateSpeed = params.rotateSpeed * params.rotateDirection * 2.0;
+
+      // 優先檢查 hash (#data:image/png;base64,...)
+      const hashData = window.location.hash.substring(1);
+      if (hashData.startsWith('data:image/')) {
+        renderBase64(hashData);
+      } else if (urlParams.has('img')) {
+        renderBase64(urlParams.get('img'));
+      }
+    }
+
+    function renderBase64(base64Str) {
+      const img = new Image();
+      img.crossOrigin = "anonymous";
+      img.src = base64Str;
+      img.onload = () => buildAcrylic(img);
+    }
+
+    // 輪廓邊界演算法 (包含 Padding 防切邊保護)
+    function generateShape(img) {
+      const r = Math.round(params.margin);
+      const padding = Math.max(20, r * 2 + 10);
+      const rawW = img.width, rawH = img.height;
+      const paddedW = rawW + padding * 2, paddedH = rawH + padding * 2;
+
+      const padCanvas = document.createElement('canvas');
+      padCanvas.width = paddedW; padCanvas.height = paddedH;
+      const padCtx = padCanvas.getContext('2d');
+      padCtx.drawImage(img, padding, padding, rawW, rawH);
+
+      const aspect = paddedW / paddedH;
+      let maxDim = 4.0;
+      let w = aspect >= 1 ? maxDim : maxDim * aspect;
+      let h = aspect >= 1 ? maxDim / aspect : maxDim;
+
+      const scale = 512 / Math.max(paddedW, paddedH);
+      const cw = Math.round(paddedW * scale);
+      const ch = Math.round(paddedH * scale);
+
+      const canvas = document.createElement('canvas');
+      canvas.width = cw; canvas.height = ch;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(padCanvas, 0, 0, cw, ch);
+
+      const data = ctx.getImageData(0, 0, cw, ch).data;
+      const grid = new Uint8Array(cw * ch);
+      for (let i = 0; i < cw * ch; i++) grid[i] = data[i * 4 + 3] >= params.alphaCutoff ? 1 : 0;
+
+      const dilated = new Uint8Array(cw * ch);
+      const scaledR = Math.round(r * scale);
+      if (scaledR <= 0) dilated.set(grid);
+      else {
+        for (let y = 0; y < ch; y++) {
+          for (let x = 0; x < cw; x++) {
+            if (grid[y * cw + x] === 1) {
+              for (let dy = -scaledR; dy <= scaledR; dy++) {
+                for (let dx = -scaledR; dx <= scaledR; dx++) {
+                  if (dx * dx + dy * dy <= scaledR * scaledR) {
+                    const nx = x + dx, ny = y + dy;
+                    if (nx >= 0 && nx < cw && ny >= 0 && ny < ch) dilated[ny * cw + nx] = 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      let points = [], startX = -1, startY = -1;
+      outer: for (let y = 0; y < ch; y++) {
+        for (let x = 0; x < cw; x++) {
+          if (dilated[y * cw + x] === 1) { startX = x; startY = y; break outer; }
+        }
+      }
+
+      if (startX === -1) {
+        const shape = new THREE.Shape();
+        shape.moveTo(-w/2, -h/2); shape.lineTo(w/2, -h/2); shape.lineTo(w/2, h/2); shape.lineTo(-w/2, h/2);
+        return { shape, width: w, height: h, paddedCanvas: padCanvas };
+      }
+
+      let currX = startX, currY = startY, dir = 0;
+      const dxArr = [1, 1, 0, -1, -1, -1, 0, 1];
+      const dyArr = [0, 1, 1, 1, 0, -1, -1, -1];
+      const visited = new Set();
+      let maxSteps = cw * ch;
+
+      while (maxSteps-- > 0) {
+        points.push({ x: currX, y: currY });
+        const key = `${currX},${currY}`;
+        if (visited.has(key) && points.length > 10 && Math.abs(currX - startX) <= 1 && Math.abs(currY - startY) <= 1) break;
+        visited.add(key);
+        let found = false, checkDir = (dir + 6) % 8;
+        for (let i = 0; i < 8; i++) {
+          const d = (checkDir + i) % 8;
+          const nx = currX + dxArr[d], ny = currY + dyArr[d];
+          if (nx >= 0 && nx < cw && ny >= 0 && ny < ch && dilated[ny * cw + nx] === 1) {
+            currX = nx; currY = ny; dir = d; found = true; break;
+          }
+        }
+        if (!found) break;
+      }
+
+      let smoothed = points;
+      for (let s = 0; s < params.smooth; s++) {
+        let temp = [];
+        for (let i = 0; i < smoothed.length; i++) {
+          let p0 = smoothed[i], p1 = smoothed[(i + 1) % smoothed.length];
+          temp.push({ x: 0.75 * p0.x + 0.25 * p1.x, y: 0.75 * p0.y + 0.25 * p1.y });
+          temp.push({ x: 0.25 * p0.x + 0.75 * p1.x, y: 0.25 * p0.y + 0.75 * p1.y });
+        }
+        smoothed = temp;
+      }
+
+      const shape = new THREE.Shape();
+      smoothed.forEach((p, idx) => {
+        const u = p.x / cw, v = 1.0 - (p.y / ch);
+        const x3d = (u - 0.5) * w, y3d = (v - 0.5) * h;
+        if (idx === 0) shape.moveTo(x3d, y3d);
+        else shape.lineTo(x3d, y3d);
+      });
+      return { shape, width: w, height: h, paddedCanvas: padCanvas };
+    }
+
+    function buildAcrylic(img) {
+      if (acrylicGroup) scene.remove(acrylicGroup);
+
+      const { shape, width, height, paddedCanvas } = generateShape(img);
+      acrylicGroup = new THREE.Group();
+      const totalThickness = params.frontThickness + params.backThickness;
+
+      const acrylicGeo = new THREE.ExtrudeGeometry(shape, {
+        steps: 1, depth: totalThickness, bevelEnabled: params.bevel > 0,
+        bevelThickness: params.bevel, bevelSize: params.bevel, bevelSegments: 4
+      });
+      acrylicGeo.center();
+
+      const acrylicMat = new THREE.MeshPhysicalMaterial({
+        color: 0xffffff, transmission: params.transmission, opacity: 1.0, transparent: true,
+        roughness: params.roughness, metalness: 0, ior: 1.491, thickness: totalThickness,
+        specularIntensity: 0.3, clearcoat: 1.0, clearcoatRoughness: 0.0, depthWrite: false, side: THREE.DoubleSide
+      });
+      const acrylicMesh = new THREE.Mesh(acrylicGeo, acrylicMat);
+      acrylicMesh.renderOrder = 4;
+      acrylicGroup.add(acrylicMesh);
+
+      const zCenterOffset = (params.frontThickness - params.backThickness) / 2;
+      const imgGeo = new THREE.PlaneGeometry(width, height);
+
+      // 正面
+      const frontTex = new THREE.CanvasTexture(paddedCanvas);
+      frontTex.colorSpace = THREE.SRGBColorSpace;
+      const frontMat = new THREE.MeshBasicMaterial({ map: frontTex, transparent: true, depthWrite: true, side: THREE.FrontSide });
+      const frontMesh = new THREE.Mesh(imgGeo, frontMat);
+      frontMesh.position.z = zCenterOffset + 0.001;
+      frontMesh.renderOrder = 3;
+      acrylicGroup.add(frontMesh);
+
+      // 白墨
+      const wCanvas = document.createElement('canvas');
+      wCanvas.width = paddedCanvas.width; wCanvas.height = paddedCanvas.height;
+      const wCtx = wCanvas.getContext('2d');
+      wCtx.drawImage(paddedCanvas, 0, 0);
+      const wData = wCtx.getImageData(0, 0, wCanvas.width, wCanvas.height);
+      for (let i = 0; i < wData.data.length; i += 4) {
+        if (wData.data[i + 3] > 20) { wData.data[i]=255; wData.data[i+1]=255; wData.data[i+2]=255; wData.data[i+3]=255; }
+        else wData.data[i+3] = 0;
+      }
+      wCtx.putImageData(wData, 0, 0);
+      const whiteTex = new THREE.CanvasTexture(wCanvas);
+      whiteTex.colorSpace = THREE.SRGBColorSpace;
+      const whiteMat = new THREE.MeshBasicMaterial({ map: whiteTex, transparent: true, depthWrite: true, side: THREE.DoubleSide });
+      const whiteMesh = new THREE.Mesh(imgGeo, whiteMat);
+      whiteMesh.position.z = zCenterOffset;
+      whiteMesh.renderOrder = 2;
+      acrylicGroup.add(whiteMesh);
+
+      // 背面 (鏡像)
+      const backMat = new THREE.MeshBasicMaterial({ map: frontTex, transparent: true, depthWrite: true, side: THREE.BackSide });
+      const backMesh = new THREE.Mesh(imgGeo, backMat);
+      backMesh.position.z = zCenterOffset - 0.001;
+      backMesh.renderOrder = 1;
+      acrylicGroup.add(backMesh);
+
+      scene.add(acrylicGroup);
+    }
+
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
