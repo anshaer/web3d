@@ -1,31 +1,36 @@
-# 居民都市 MToon · 10 人示範版
+# 居民都市 MToon · 100 人地塊版
 
-直接用 Chrome / Edge 開啟 People_City_MToon.html。三個程式庫已內嵌，不需連網下載。
-需要開啟瀏覽器硬體加速、支援 WebGL。尚未在可用的 WebGL 瀏覽器完成畫面驗證。
+直接開啟 People_City_MToon.html，依賴已內嵌，可離線使用。
+需要支援 WebGL 的 Chrome / Edge。此執行環境無法建立 WebGL，尚未完成實際畫面驗證。
 
-- 拖曳旋轉，滾輪或雙指縮放；禁止平移。
-- 點建築或左側名單顯示介紹，鏡頭移到人物附近。
-- 可搜尋名稱／標籤，依創作、技術、交流篩選。
-- 內含 10 位虛構人物，以動物符號作為頭像占位。
-- avatar 可填頭像網址；圖床須允許跨來源 CORS，否則仍顯示動物符號。
-- 可以匯入／匯出 JSON。此版只供 10 筆概念測試，尚未實作千筆分區載入或大量繪製優化。
+## 地塊與刷新
+- 10×10 固定地塊，100 位虛構人口，一人一塊。
+- 人物以 id 識別，plot.x / plot.z 固定對應地塊（整數 0～9），排序改變不影響地址。
+- 同一時間最多載入附近 5×5 共 25 塊。跨過地塊邊界時保留重疊區域，回收離開的地塊並配置新人物。
+- 只有載入區域建立頭像材質；卸載時釋放招牌圖片與幾何資源。地面和道路常駐。
+- 五種模板共用幾何與材質：house 尖頂住宅、shop 商店、tower 公寓、studio 工作室、villa 別墅。
+- 未載入區域不顯示建築，此版沒有全城低精度遠景。
 
-## 放到靜態網站
+## 操作
+拖曳旋轉、右鍵拖曳或觸控雙指平移、滾輪／雙指縮放。
+北／南／東／西按鈕可巡城。搜尋與名單涵蓋全部人口，點名單可跳轉到人物地址。
+點建築查看介紹，回到中心可重設巡覽位置。
 
-將 People_City_MToon.html 改名 index.html，與 residents.json 放在同個資料夾即可。
-HTTP/HTTPS 模式會讀取同資料夾的 residents.json；本機直接開啟使用內建資料，也可手動匯入。
-外部 JSON 此示範版要求恰好 10 筆。讀取失敗會退回內建資料並顯示原因。
-不需要 PHP、SQL 或 Node 伺服器。
+## JSON
+HTTP/HTTPS 開啟會自動讀同資料夾 residents.json，直接開本機檔使用內建資料。
+也可手動匯入、匯出。允許 1～100 人；ID 與地塊不能重複。
+必要欄位：id、name、group（創作／技術／交流）、plot、template；tags 為字串陣列。
+例如：
+```json
+{"id":"p001","name":"小晴","group":"創作","emoji":"🐱","avatar":"","tags":["繪圖"],"bio":"人物介紹","plot":{"x":0,"z":0},"template":"house"}
+```
+avatar 可填允許跨來源 CORS 的圖片網址或 data URL，未填使用動物占位。
 
-## JSON 欄位
+## 發佈靜態檔
+把 People_City_MToon.html 改名 index.html，和 residents.json 放在同一資料夾。
+不需要 PHP 或 SQL。
 
-id：唯一代號；name：名稱；group：創作／技術／交流；emoji：備用頭像；avatar：圖片網址或 data URL；tags：文字陣列；bio：介紹；joined：加入日期。
-
-## 著色器與依賴
-
-建築、地面、植栽採用 @pixiv/three-vrm 3.3.0 的 MToonMaterial，並非 MeshToonMaterial 替代。
-頭像招牌用 MeshBasicMaterial 保持清楚可讀。使用 Three.js 0.170.0 和 OrbitControls。
-來源：https://github.com/pixiv/three-vrm 、 https://github.com/mrdoob/three.js
-依賴授權見 vendor/LICENSE-*。
-
+建築、地面、植栽使用 @pixiv/three-vrm 3.3.0 MToonMaterial。
+招牌採 MeshBasicMaterial 保持清晰；Three.js 0.170.0，OrbitControls。
+依賴授權在 vendor/LICENSE-*。
 Copyright © 2026-2030 anshaer.com. All rights reserved.
