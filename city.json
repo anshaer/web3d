@@ -1,0 +1,1850 @@
+{
+  "version": 3,
+  "center": "t31",
+  "people": [
+    {
+      "id": "p001",
+      "name": "小晴001",
+      "emoji": "🐱",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p002",
+      "name": "阿澄002",
+      "emoji": "🦊",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p003",
+      "name": "小葵003",
+      "emoji": "🐰",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p004",
+      "name": "星野004",
+      "emoji": "🐻",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p005",
+      "name": "小羽005",
+      "emoji": "🐼",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p006",
+      "name": "阿森006",
+      "emoji": "🐸",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p007",
+      "name": "小海007",
+      "emoji": "🐧",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p008",
+      "name": "月白008",
+      "emoji": "🦉",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p009",
+      "name": "小夏009",
+      "emoji": "🐹",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p010",
+      "name": "阿岳010",
+      "emoji": "🐯",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p011",
+      "name": "小晴011",
+      "emoji": "🐱",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p012",
+      "name": "阿澄012",
+      "emoji": "🦊",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p013",
+      "name": "小葵013",
+      "emoji": "🐰",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p014",
+      "name": "星野014",
+      "emoji": "🐻",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p015",
+      "name": "小羽015",
+      "emoji": "🐼",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p016",
+      "name": "阿森016",
+      "emoji": "🐸",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p017",
+      "name": "小海017",
+      "emoji": "🐧",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p018",
+      "name": "月白018",
+      "emoji": "🦉",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p019",
+      "name": "小夏019",
+      "emoji": "🐹",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p020",
+      "name": "阿岳020",
+      "emoji": "🐯",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p021",
+      "name": "小晴021",
+      "emoji": "🐱",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p022",
+      "name": "阿澄022",
+      "emoji": "🦊",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p023",
+      "name": "小葵023",
+      "emoji": "🐰",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p024",
+      "name": "星野024",
+      "emoji": "🐻",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p025",
+      "name": "小羽025",
+      "emoji": "🐼",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p026",
+      "name": "阿森026",
+      "emoji": "🐸",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p027",
+      "name": "小海027",
+      "emoji": "🐧",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p028",
+      "name": "月白028",
+      "emoji": "🦉",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p029",
+      "name": "小夏029",
+      "emoji": "🐹",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p030",
+      "name": "阿岳030",
+      "emoji": "🐯",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p031",
+      "name": "小晴031",
+      "emoji": "🐱",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p032",
+      "name": "阿澄032",
+      "emoji": "🦊",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p033",
+      "name": "小葵033",
+      "emoji": "🐰",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p034",
+      "name": "星野034",
+      "emoji": "🐻",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p035",
+      "name": "小羽035",
+      "emoji": "🐼",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p036",
+      "name": "阿森036",
+      "emoji": "🐸",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p037",
+      "name": "小海037",
+      "emoji": "🐧",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p038",
+      "name": "月白038",
+      "emoji": "🦉",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p039",
+      "name": "小夏039",
+      "emoji": "🐹",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p040",
+      "name": "阿岳040",
+      "emoji": "🐯",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p041",
+      "name": "小晴041",
+      "emoji": "🐱",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p042",
+      "name": "阿澄042",
+      "emoji": "🦊",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p043",
+      "name": "小葵043",
+      "emoji": "🐰",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p044",
+      "name": "星野044",
+      "emoji": "🐻",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p045",
+      "name": "小羽045",
+      "emoji": "🐼",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p046",
+      "name": "阿森046",
+      "emoji": "🐸",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p047",
+      "name": "小海047",
+      "emoji": "🐧",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p048",
+      "name": "月白048",
+      "emoji": "🦉",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p049",
+      "name": "小夏049",
+      "emoji": "🐹",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p050",
+      "name": "阿岳050",
+      "emoji": "🐯",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p051",
+      "name": "小晴051",
+      "emoji": "🐱",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p052",
+      "name": "阿澄052",
+      "emoji": "🦊",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p053",
+      "name": "小葵053",
+      "emoji": "🐰",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p054",
+      "name": "星野054",
+      "emoji": "🐻",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p055",
+      "name": "小羽055",
+      "emoji": "🐼",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p056",
+      "name": "阿森056",
+      "emoji": "🐸",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p057",
+      "name": "小海057",
+      "emoji": "🐧",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p058",
+      "name": "月白058",
+      "emoji": "🦉",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p059",
+      "name": "小夏059",
+      "emoji": "🐹",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p060",
+      "name": "阿岳060",
+      "emoji": "🐯",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p061",
+      "name": "小晴061",
+      "emoji": "🐱",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p062",
+      "name": "阿澄062",
+      "emoji": "🦊",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p063",
+      "name": "小葵063",
+      "emoji": "🐰",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p064",
+      "name": "星野064",
+      "emoji": "🐻",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p065",
+      "name": "小羽065",
+      "emoji": "🐼",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p066",
+      "name": "阿森066",
+      "emoji": "🐸",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p067",
+      "name": "小海067",
+      "emoji": "🐧",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p068",
+      "name": "月白068",
+      "emoji": "🦉",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p069",
+      "name": "小夏069",
+      "emoji": "🐹",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p070",
+      "name": "阿岳070",
+      "emoji": "🐯",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p071",
+      "name": "小晴071",
+      "emoji": "🐱",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p072",
+      "name": "阿澄072",
+      "emoji": "🦊",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p073",
+      "name": "小葵073",
+      "emoji": "🐰",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p074",
+      "name": "星野074",
+      "emoji": "🐻",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p075",
+      "name": "小羽075",
+      "emoji": "🐼",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p076",
+      "name": "阿森076",
+      "emoji": "🐸",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p077",
+      "name": "小海077",
+      "emoji": "🐧",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p078",
+      "name": "月白078",
+      "emoji": "🦉",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p079",
+      "name": "小夏079",
+      "emoji": "🐹",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p080",
+      "name": "阿岳080",
+      "emoji": "🐯",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p081",
+      "name": "小晴081",
+      "emoji": "🐱",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p082",
+      "name": "阿澄082",
+      "emoji": "🦊",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p083",
+      "name": "小葵083",
+      "emoji": "🐰",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p084",
+      "name": "星野084",
+      "emoji": "🐻",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p085",
+      "name": "小羽085",
+      "emoji": "🐼",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p086",
+      "name": "阿森086",
+      "emoji": "🐸",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p087",
+      "name": "小海087",
+      "emoji": "🐧",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p088",
+      "name": "月白088",
+      "emoji": "🦉",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p089",
+      "name": "小夏089",
+      "emoji": "🐹",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p090",
+      "name": "阿岳090",
+      "emoji": "🐯",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p091",
+      "name": "小晴091",
+      "emoji": "🐱",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p092",
+      "name": "阿澄092",
+      "emoji": "🦊",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p093",
+      "name": "小葵093",
+      "emoji": "🐰",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p094",
+      "name": "星野094",
+      "emoji": "🐻",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p095",
+      "name": "小羽095",
+      "emoji": "🐼",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p096",
+      "name": "阿森096",
+      "emoji": "🐸",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p097",
+      "name": "小海097",
+      "emoji": "🐧",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p098",
+      "name": "月白098",
+      "emoji": "🦉",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p099",
+      "name": "小夏099",
+      "emoji": "🐹",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    },
+    {
+      "id": "p100",
+      "name": "阿岳100",
+      "emoji": "🐯",
+      "avatar": "",
+      "bio": "虛構人物 · 可替換個人介紹",
+      "tags": [
+        "示範居民"
+      ]
+    }
+  ],
+  "tiles": [
+    {
+      "id": "t0",
+      "x": -4,
+      "z": -3,
+      "type": "land7",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t1",
+      "x": -3,
+      "z": -3,
+      "type": "land7",
+      "rotation": 0,
+      "residents": [
+        "p001"
+      ]
+    },
+    {
+      "id": "t2",
+      "x": -2,
+      "z": -3,
+      "type": "land7",
+      "rotation": 0,
+      "residents": [
+        "p002",
+        "p003",
+        "p004",
+        "p005",
+        "p006"
+      ]
+    },
+    {
+      "id": "t3",
+      "x": -1,
+      "z": -3,
+      "type": "land7",
+      "rotation": 0,
+      "residents": [
+        "p007",
+        "p008",
+        "p009",
+        "p010",
+        "p011",
+        "p012",
+        "p013",
+        "p014",
+        "p015",
+        "p016"
+      ]
+    },
+    {
+      "id": "t4",
+      "x": 0,
+      "z": -3,
+      "type": "road0_0",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t5",
+      "x": 1,
+      "z": -3,
+      "type": "land7",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t6",
+      "x": 2,
+      "z": -3,
+      "type": "land7",
+      "rotation": 0,
+      "residents": [
+        "p017"
+      ]
+    },
+    {
+      "id": "t7",
+      "x": 3,
+      "z": -3,
+      "type": "land7",
+      "rotation": 0,
+      "residents": [
+        "p018",
+        "p019",
+        "p020",
+        "p021",
+        "p022"
+      ]
+    },
+    {
+      "id": "t8",
+      "x": 4,
+      "z": -3,
+      "type": "land7",
+      "rotation": 0,
+      "residents": [
+        "p023",
+        "p024",
+        "p025",
+        "p026",
+        "p027",
+        "p028",
+        "p029",
+        "p030",
+        "p031",
+        "p032"
+      ]
+    },
+    {
+      "id": "t9",
+      "x": -4,
+      "z": -2,
+      "type": "building0",
+      "rotation": 0,
+      "residents": [
+        "p033",
+        "p034",
+        "p035",
+        "p036",
+        "p037",
+        "p038",
+        "p039",
+        "p040",
+        "p041",
+        "p042",
+        "p043",
+        "p044",
+        "p045",
+        "p046",
+        "p047",
+        "p048",
+        "p049",
+        "p050",
+        "p051",
+        "p052"
+      ]
+    },
+    {
+      "id": "t10",
+      "x": -3,
+      "z": -2,
+      "type": "building1",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t11",
+      "x": -2,
+      "z": -2,
+      "type": "building2",
+      "rotation": 0,
+      "residents": [
+        "p053"
+      ]
+    },
+    {
+      "id": "t12",
+      "x": -1,
+      "z": -2,
+      "type": "building3",
+      "rotation": 0,
+      "residents": [
+        "p054",
+        "p055",
+        "p056",
+        "p057",
+        "p058"
+      ]
+    },
+    {
+      "id": "t13",
+      "x": 0,
+      "z": -2,
+      "type": "road0_0",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t14",
+      "x": 1,
+      "z": -2,
+      "type": "building5",
+      "rotation": 0,
+      "residents": [
+        "p059",
+        "p060",
+        "p061",
+        "p062",
+        "p063",
+        "p064",
+        "p065",
+        "p066",
+        "p067",
+        "p068",
+        "p069",
+        "p070",
+        "p071",
+        "p072",
+        "p073",
+        "p074",
+        "p075",
+        "p076",
+        "p077",
+        "p078"
+      ]
+    },
+    {
+      "id": "t15",
+      "x": 2,
+      "z": -2,
+      "type": "building6",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t16",
+      "x": 3,
+      "z": -2,
+      "type": "building7",
+      "rotation": 0,
+      "residents": [
+        "p079"
+      ]
+    },
+    {
+      "id": "t17",
+      "x": 4,
+      "z": -2,
+      "type": "building8",
+      "rotation": 0,
+      "residents": [
+        "p080",
+        "p081",
+        "p082",
+        "p083",
+        "p084"
+      ]
+    },
+    {
+      "id": "t18",
+      "x": -4,
+      "z": -1,
+      "type": "building1",
+      "rotation": 0,
+      "residents": [
+        "p085",
+        "p086",
+        "p087",
+        "p088",
+        "p089",
+        "p090",
+        "p091",
+        "p092",
+        "p093",
+        "p094"
+      ]
+    },
+    {
+      "id": "t19",
+      "x": -3,
+      "z": -1,
+      "type": "building2",
+      "rotation": 0,
+      "residents": [
+        "p095",
+        "p096",
+        "p097",
+        "p098",
+        "p099",
+        "p100"
+      ]
+    },
+    {
+      "id": "t20",
+      "x": -2,
+      "z": -1,
+      "type": "building3",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t21",
+      "x": -1,
+      "z": -1,
+      "type": "building4",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t22",
+      "x": 0,
+      "z": -1,
+      "type": "road0_0",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t23",
+      "x": 1,
+      "z": -1,
+      "type": "building6",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t24",
+      "x": 2,
+      "z": -1,
+      "type": "building7",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t25",
+      "x": 3,
+      "z": -1,
+      "type": "building8",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t26",
+      "x": 4,
+      "z": -1,
+      "type": "building9",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t27",
+      "x": -4,
+      "z": 0,
+      "type": "road0_0",
+      "rotation": 90,
+      "residents": []
+    },
+    {
+      "id": "t28",
+      "x": -3,
+      "z": 0,
+      "type": "road0_0",
+      "rotation": 90,
+      "residents": []
+    },
+    {
+      "id": "t29",
+      "x": -2,
+      "z": 0,
+      "type": "road0_0",
+      "rotation": 90,
+      "residents": []
+    },
+    {
+      "id": "t30",
+      "x": -1,
+      "z": 0,
+      "type": "road0_0",
+      "rotation": 90,
+      "residents": []
+    },
+    {
+      "id": "t31",
+      "x": 0,
+      "z": 0,
+      "type": "road0_1",
+      "rotation": 90,
+      "residents": []
+    },
+    {
+      "id": "t32",
+      "x": 1,
+      "z": 0,
+      "type": "road0_0",
+      "rotation": 90,
+      "residents": []
+    },
+    {
+      "id": "t33",
+      "x": 2,
+      "z": 0,
+      "type": "road0_0",
+      "rotation": 90,
+      "residents": []
+    },
+    {
+      "id": "t34",
+      "x": 3,
+      "z": 0,
+      "type": "road0_0",
+      "rotation": 90,
+      "residents": []
+    },
+    {
+      "id": "t35",
+      "x": 4,
+      "z": 0,
+      "type": "road0_0",
+      "rotation": 90,
+      "residents": []
+    },
+    {
+      "id": "t36",
+      "x": -4,
+      "z": 1,
+      "type": "building3",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t37",
+      "x": -3,
+      "z": 1,
+      "type": "building4",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t38",
+      "x": -2,
+      "z": 1,
+      "type": "building5",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t39",
+      "x": -1,
+      "z": 1,
+      "type": "building6",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t40",
+      "x": 0,
+      "z": 1,
+      "type": "road0_0",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t41",
+      "x": 1,
+      "z": 1,
+      "type": "building8",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t42",
+      "x": 2,
+      "z": 1,
+      "type": "building9",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t43",
+      "x": 3,
+      "z": 1,
+      "type": "building10",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t44",
+      "x": 4,
+      "z": 1,
+      "type": "building11",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t45",
+      "x": -4,
+      "z": 2,
+      "type": "building4",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t46",
+      "x": -3,
+      "z": 2,
+      "type": "building5",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t47",
+      "x": -2,
+      "z": 2,
+      "type": "building6",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t48",
+      "x": -1,
+      "z": 2,
+      "type": "building7",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t49",
+      "x": 0,
+      "z": 2,
+      "type": "road0_0",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t50",
+      "x": 1,
+      "z": 2,
+      "type": "building9",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t51",
+      "x": 2,
+      "z": 2,
+      "type": "building10",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t52",
+      "x": 3,
+      "z": 2,
+      "type": "building11",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t53",
+      "x": 4,
+      "z": 2,
+      "type": "building0",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t54",
+      "x": -4,
+      "z": 3,
+      "type": "building5",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t55",
+      "x": -3,
+      "z": 3,
+      "type": "building6",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t56",
+      "x": -2,
+      "z": 3,
+      "type": "building7",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t57",
+      "x": -1,
+      "z": 3,
+      "type": "building8",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t58",
+      "x": 0,
+      "z": 3,
+      "type": "road0_0",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t59",
+      "x": 1,
+      "z": 3,
+      "type": "building10",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t60",
+      "x": 2,
+      "z": 3,
+      "type": "building11",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t61",
+      "x": 3,
+      "z": 3,
+      "type": "building0",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "t62",
+      "x": 4,
+      "z": 3,
+      "type": "building1",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s0",
+      "x": -16,
+      "z": 6,
+      "type": "special0",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s1",
+      "x": -11,
+      "z": 6,
+      "type": "special1",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s2",
+      "x": -6,
+      "z": 6,
+      "type": "special2",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s3",
+      "x": -1,
+      "z": 6,
+      "type": "special3",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s4",
+      "x": 4,
+      "z": 6,
+      "type": "special4",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s5",
+      "x": 9,
+      "z": 6,
+      "type": "special5",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s6",
+      "x": 14,
+      "z": 6,
+      "type": "special6",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s7",
+      "x": -16,
+      "z": 11,
+      "type": "special7",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s8",
+      "x": -11,
+      "z": 11,
+      "type": "special8",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s9",
+      "x": -6,
+      "z": 11,
+      "type": "special9",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s10",
+      "x": -1,
+      "z": 11,
+      "type": "special10",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s11",
+      "x": 4,
+      "z": 11,
+      "type": "special11",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s12",
+      "x": 9,
+      "z": 11,
+      "type": "special12",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s13",
+      "x": 14,
+      "z": 11,
+      "type": "special13",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s14",
+      "x": -16,
+      "z": 16,
+      "type": "special14",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s15",
+      "x": -11,
+      "z": 16,
+      "type": "special15",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s16",
+      "x": -6,
+      "z": 16,
+      "type": "special16",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s17",
+      "x": -1,
+      "z": 16,
+      "type": "special17",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s18",
+      "x": 4,
+      "z": 16,
+      "type": "special18",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s19",
+      "x": 9,
+      "z": 16,
+      "type": "special19",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s20",
+      "x": 14,
+      "z": 16,
+      "type": "special20",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s21",
+      "x": -16,
+      "z": 21,
+      "type": "special21",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s22",
+      "x": -11,
+      "z": 21,
+      "type": "special22",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s23",
+      "x": -6,
+      "z": 21,
+      "type": "special23",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s24",
+      "x": -1,
+      "z": 21,
+      "type": "special24",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s25",
+      "x": 4,
+      "z": 21,
+      "type": "special25",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s26",
+      "x": 9,
+      "z": 21,
+      "type": "special26",
+      "rotation": 0,
+      "residents": []
+    },
+    {
+      "id": "s27",
+      "x": 14,
+      "z": 21,
+      "type": "special27",
+      "rotation": 0,
+      "residents": []
+    }
+  ]
+}
